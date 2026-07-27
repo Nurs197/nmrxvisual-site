@@ -1,13 +1,14 @@
 {
-  "name": "NMRXVisual",
-  "short_name": "NMRXVisual",
-  "start_url": "/",
+  "name": "РезервТех — демонстрационный проект NMRXVisual",
+  "short_name": "РезервТех",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#080a0b",
   "theme_color": "#080a0b",
   "icons": [
     {
-      "src": "assets/icons/favicon.svg",
+      "src": "./assets/icons/favicon.svg",
       "sizes": "any",
       "type": "image/svg+xml"
     }
