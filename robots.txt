@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://company.ru/sitemap.xml
+Sitemap: https://nurs197.github.io/nmrxvisual-site/sitemap.xml
