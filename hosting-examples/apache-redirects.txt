@@ -1,0 +1,9 @@
+Используйте этот пример только после замены company.ru на подтверждённый домен.
+
+RewriteEngine On
+
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} ^www\.company\.ru$ [NC]
+RewriteRule ^ https://company.ru%{REQUEST_URI} [R=301,L]
+
+ErrorDocument 404 /404.html

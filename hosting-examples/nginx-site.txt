@@ -1,0 +1,20 @@
+Используйте этот пример только после замены company.ru и /var/www/company.ru на реальные значения.
+
+server {
+    listen 80;
+    listen [::]:80;
+    server_name www.company.ru;
+    return 301 https://company.ru$request_uri;
+}
+
+server {
+    listen 80;
+    listen [::]:80;
+    server_name company.ru;
+    root /var/www/company.ru;
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ /404.html;
+    }
+}
